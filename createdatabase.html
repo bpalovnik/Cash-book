@@ -1,0 +1,26 @@
+<?php
+include 'config.php';
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="create_database.php" method="post">
+            <table style="border: 0px">
+                <tr style="background: #cccccc;">
+                    <td style="width: 150px; text-align: center">CREATE DATABASE</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="db" size="30" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="CREATE DATABASE"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
