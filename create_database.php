@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 $database = $_POST['db'];
-$create = "CREATE DATABASE cash_book";
+$create = "CREATE DATABASE $database";
 if(mysqli_query($conn, $create))
 {
     echo "Database created succesfully!";
@@ -9,4 +9,5 @@ if(mysqli_query($conn, $create))
  else {
     echo "Canot create database " . mysqli_error($conn);
  }
+ include 'createdatabase.html';
 ?>
